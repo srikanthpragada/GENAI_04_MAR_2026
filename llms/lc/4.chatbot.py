@@ -16,6 +16,7 @@ while True:
     messages.append(HumanMessage(content=prompt))
     response = model.invoke(messages)
     print(response.content)
+    
     # Alternatively you can use response as AIMessage
     # messages.append( {"role" : "assistant", "content" : response.content})
     messages.append(response) # AIMessage
