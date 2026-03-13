@@ -1,5 +1,4 @@
 from huggingface_hub import InferenceClient
-from langchain_core.prompts import PromptTemplate
 import keys
  
 model_id = "openai/gpt-oss-120b"
@@ -7,7 +6,9 @@ client = InferenceClient(model=model_id,
                          token= keys.HUGGINGFACE_KEY)
 
 text = "Check whether a number is perfect number or not"
-prompt = f"""Just give me a Python function for the following task and give no more details:
+lang = "python"
+
+prompt = f"""Just give me a {lang} function for the following task and give no more details:
 {text}
 """
 messages = [{"role": "user", "content": prompt}]
