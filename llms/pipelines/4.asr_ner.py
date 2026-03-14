@@ -4,14 +4,13 @@ from transformers import logging
 logging.set_verbosity_error()
 
 # Load the pipeline with the Whisper model
-asr = pipeline("automatic-speech-recognition",  model="openai/whisper-base")
+asr = pipeline("automatic-speech-recognition",  model="openai/whisper-base.en")
 
 # Path to your audio file (.wav or .mp3)
 audio_path = "./pipelines/mlk_speech.mp3"
 
 # Transcribe the audio
-result = asr(audio_path, return_timestamps=True,
-             generate_kwargs={"language": "en"})
+result = asr(audio_path, return_timestamps=True)
 
 # Print the transcription
 # print("Transcription:", result["text"] )

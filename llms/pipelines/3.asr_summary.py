@@ -8,9 +8,7 @@ asr = pipeline("automatic-speech-recognition",
 audio_path = "./pipelines/mlk_speech.mp3"   
 
 # Transcribe the audio
-result = asr(audio_path, 
-             return_timestamps = True
-             )
+result = asr(audio_path,return_timestamps = True)
 
 # Print the transcription
 #print("Transcription:", result["text"] )
