@@ -8,8 +8,10 @@ loader = TextLoader("./docs/mlk.txt")
 docs = loader.load()
 print("Document Count : ", len(docs))
 
+print(docs[0].page_content[:50])
+
 # Print the loaded documents
-for doc in docs:
-    print('Size : ', len(doc.page_content))
-    print(doc.page_content[:50])  # Print the first 50 characters of each document
-    print("-" * 50)
+# for doc in docs:
+#     print('Size : ', len(doc.page_content))
+#     print(doc.page_content[:50])  # Print the first 50 characters of each document
+#     print("-" * 50)
