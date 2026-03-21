@@ -3,7 +3,7 @@ from langchain_community.vectorstores import FAISS
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
-loader = PyPDFLoader("./docs/courses_offered.pdf", mode='page')
+loader = PyPDFLoader("../docs/courses_offered.pdf", mode='page')
 docs = loader.load()
 print("Loaded documents", len(docs))
 
@@ -20,7 +20,7 @@ embeddings_model = HuggingFaceEmbeddings(
 
 db = FAISS.from_documents(chunks, embeddings_model)
 
-retrieved_results = db.similarity_search("Python", k = 3)
+retrieved_results = db.similarity_search("What is course fee for Python", k = 3)
 
 for result in retrieved_results:
     print(result.page_content)
