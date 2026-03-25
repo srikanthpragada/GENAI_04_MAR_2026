@@ -1,0 +1,22 @@
+[
+    { 
+        "name" : "Logitech Mouse MX 2",
+        "price" : 12000,
+        "qty" : 5
+    },
+    {
+        "name": "LG 25 inches monitor",
+        "price": 25000,
+        "qty": 2
+    },
+    {
+        "name": "Segate 2TB SSD External Harddisk",
+        "price": 20000,
+        "qty": 10
+    },
+    {
+        "name": "Logitech Vertical Mouse",
+        "price": 10000,
+        "qty": 2
+    }
+]
