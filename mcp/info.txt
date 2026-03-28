@@ -1,0 +1,8 @@
+Run MCP inspector
+=================
+npx @modelcontextprotocol/inspector
+
+3rd Party MCP Servers
+=====================
+https://github.com/modelcontextprotocol/servers
+
