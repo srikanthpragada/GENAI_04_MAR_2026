@@ -11,10 +11,8 @@ clients = MultiServerMCPClient(
         "url": "http://localhost:9999/mcp",
         "transport": "streamable_http"},
      "File Server:": {
-        "command": "python",
-        "args": ["./file_server.py"],
-        "transport": "stdio"
-    }
+        "url": "http://localhost:9000/mcp",
+        "transport": "streamable_http"}
     }
 )
 

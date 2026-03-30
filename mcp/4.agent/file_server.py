@@ -15,4 +15,4 @@ def read_file(filename: str) -> str | None:
         return None
 
 
-mcp.run(transport="stdio")
+mcp.run(transport="http", port = 9000)

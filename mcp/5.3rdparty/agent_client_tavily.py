@@ -19,7 +19,7 @@ clients = MultiServerMCPClient(
 async def process():
         tools = await clients.get_tools()
         for tool in tools:
-                print(tool.name)
+             print(tool.name)
 
         print('-' * 50)
         
