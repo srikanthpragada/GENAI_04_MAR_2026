@@ -1,0 +1,13 @@
+create table todos
+( id integer primary key autoincrement,
+  todo varchar(100) not null,
+  addedon DATE DEFAULT (DATE('now')),
+  importance varchar(10) DEFAULT 'normal',
+  completedon Date
+)
+
+insert into todos (todo) values('Read a book on MCP');
+insert into todos (todo, importance) values('Pay Rent for Office', 'high');
+insert into todos (todo, importance) values('Return Library Book', 'high');
+insert into todos (todo, importance) values('Buy more stocks', 'low');
+insert into todos (todo, importance) values('Give Car for Service', 'low');
